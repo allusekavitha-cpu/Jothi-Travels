@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Cab | Jothi Travels & Tours</title>
+<meta name="description" content="Book your Tirunelveli taxi online — sedans, SUVs, Innova, Crysta and Tempo Travellers for temple tours, pilgrimages, airport transfers and outstation trips.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header solid">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="32" cy="32" r="31" fill="#0047AB"/><path d="M32 8 L36 15 H28 Z" fill="#FFC300"/><rect x="30.3" y="14" width="3.4" height="5" fill="#FFC300"/><path d="M20 33 L24 22 L28 27 L32 18 L36 27 L40 22 L44 33 Z" fill="#FFC300"/><rect x="18" y="33" width="28" height="4" fill="#FFC300"/>
+        <g transform="translate(14,38)"><rect x="0" y="6" width="36" height="9" rx="3" fill="#ffffff"/><path d="M4 6 L9 -1 H27 L32 6 Z" fill="#ffffff"/><circle cx="9" cy="16" r="3.4" fill="#0047AB" stroke="#fff" stroke-width="1.4"/><circle cx="27" cy="16" r="3.4" fill="#0047AB" stroke="#fff" stroke-width="1.4"/></g>
+      </svg>
+      <div class="logo-text"><div class="name">Jothi<span> Travels</span></div><div class="sub">&amp; Tours</div></div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="ayyappa-pilgrimage.html">Ayyappa Pilgrimage</a>
+      <a href="fleet.html">Vehicle Fleet</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html" class="active">Book a Cab</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+919443486717"><span class="dot">&#9742;</span> 9443486717</a>
+      <a class="btn btn-gold btn-sm" href="booking.html">Book a Cab</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a><a href="destinations.html">Destinations</a><a href="ayyappa-pilgrimage.html">Ayyappa Pilgrimage</a><a href="fleet.html">Vehicle Fleet</a><a href="gallery.html">Gallery</a><a href="booking.html">Book a Cab</a><a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section-alt" style="padding-top:140px;">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Book Your Cab</h2>
+      <p>Fill in your trip details below — submitting will open WhatsApp with everything pre-filled, ready to send straight to our booking desk.</p>
+    </div>
+
+    <div class="booking-layout">
+      <div class="card" style="padding:36px;">
+        <form id="booking-form" autocomplete="off">
+          <div class="form-section-title">Passenger Details</div>
+          <div class="form-row-2">
+            <div><label>Full Name *</label><input type="text" name="name" placeholder="Your name" required></div>
+            <div><label>Mobile Number *</label><input type="tel" name="mobile" placeholder="9443486717" required></div>
+          </div>
+          <div style="margin-top:16px;"><label>Email</label><input type="email" name="email" placeholder="you@example.com"></div>
+
+          <div class="form-section-title">Trip Details</div>
+          <div class="form-row-2">
+            <div><label>Pickup Location *</label><input type="text" name="pickup" placeholder="e.g. Tirunelveli Junction" required></div>
+            <div><label>Drop Location *</label><input type="text" name="destination" placeholder="e.g. Courtallam Falls" required></div>
+            <div><label>Date *</label><input type="date" name="date" required></div>
+            <div><label>Time *</label><input type="time" name="time" required></div>
+            <div><label>Number of Passengers *</label><input type="number" name="passengers" min="1" max="40" placeholder="e.g. 4" required></div>
+            <div>
+              <label>Trip Type *</label>
+              <select name="tripType" required>
+                <option value="">Select trip type</option>
+                <option>One Way</option>
+                <option>Round Trip</option>
+                <option>Airport Transfer</option>
+                <option>Local Sightseeing</option>
+                <option>Custom Tour</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-section-title">Vehicle Selection</div>
+          <label>Vehicle Type *</label>
+          <select name="vehicle" required>
+            <option value="">Select a vehicle</option>
+            <option>Sedan</option>
+            <option>SUV</option>
+            <option>Innova</option>
+            <option>Innova Crysta</option>
+            <option>Ertiga</option>
+            <option>Tempo Traveller 12 Seater</option>
+            <option>Tempo Traveller 17 Seater</option>
+            <option>Luxury Van</option>
+          </select>
+
+          <p class="form-error" id="booking-error" style="margin-top:16px;"></p>
+          <button type="submit" class="btn btn-whatsapp btn-lg btn-block" style="margin-top:22px;">Submit Booking via WhatsApp</button>
+          <p style="text-align:center;color:#94a3b8;font-size:0.8rem;margin-top:12px;">Submitting will open WhatsApp with your booking details pre-filled, ready to send to our team.</p>
+        </form>
+        <div class="form-success" id="booking-success" style="display:none;">
+          <div class="check">&#10003;</div>
+          <h3>Booking Request Sent!</h3>
+          <p>We've opened WhatsApp with your booking details. Please tap send to confirm — our team will contact you shortly.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="side-card">
+          <h3 style="margin-bottom:14px;">Request a Callback Instead</h3>
+          <form class="callback-form" autocomplete="off">
+            <div class="form-grid">
+              <div><label>Name *</label><input type="text" name="name" required></div>
+              <div><label>Phone Number *</label><input type="tel" name="phone" required></div>
+              <div><label>Requirement *</label><textarea name="requirement" rows="3" required></textarea></div>
+              <div class="form-error"></div>
+              <button type="submit" class="btn btn-sunset btn-block">Request a Callback</button>
+            </div>
+          </form>
+          <div class="form-success" style="display:none;">
+            <div class="check">&#10003;</div>
+            <h3>Request Sent!</h3>
+            <p>We'll call you back shortly.</p>
+          </div>
+        </div>
+
+        <div class="side-card blue">
+          <h3>Prefer to Call?</h3>
+          <p style="opacity:.8;margin-top:8px;font-size:.9rem;">Our team is available 24/7 for instant bookings.</p>
+          <a href="tel:+919443486717">&#9742; 9443486717</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo"><svg viewBox="0 0 64 64" width="40" height="40" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="31" fill="#0047AB"/><path d="M32 8 L36 15 H28 Z" fill="#FFC300"/><rect x="30.3" y="14" width="3.4" height="5" fill="#FFC300"/><path d="M20 33 L24 22 L28 27 L32 18 L36 27 L40 22 L44 33 Z" fill="#FFC300"/><rect x="18" y="33" width="28" height="4" fill="#FFC300"/><g transform="translate(14,38)"><rect x="0" y="6" width="36" height="9" rx="3" fill="#ffffff"/><path d="M4 6 L9 -1 H27 L32 6 Z" fill="#ffffff"/><circle cx="9" cy="16" r="3.4" fill="#0047AB" stroke="#fff" stroke-width="1.4"/><circle cx="27" cy="16" r="3.4" fill="#0047AB" stroke="#fff" stroke-width="1.4"/></g></svg>
+        <div class="logo-text"><div class="name">Jothi<span> Travels</span></div><div class="sub">&amp; Tours</div></div>
+      </div>
+      <p class="footer-tagline">Your Trusted Travel Partner for Temple, Tourism &amp; Airport Transfers</p>
+    </div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="ayyappa-pilgrimage.html">Ayyappa Pilgrimage</a></li><li><a href="fleet.html">Vehicle Fleet</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Our Services</h4><ul><li>Airport Transfers</li><li>Outstation Trips</li><li>Temple Tours</li><li>Ayyappa Pilgrimage Packages</li><li>Family Tours</li><li>Corporate Travel</li></ul></div>
+    <div><h4>Contact Us</h4><ul><li>&#9742; <a href="tel:+919443486717">9443486717</a></li><li>&#128172; <a href="https://wa.me/919443486717" target="_blank" rel="noopener">WhatsApp</a></li><li>&#9993; <a href="mailto:info@jothitravels.com">info@jothitravels.com</a></li><li>&#128205; Tirunelveli, Tamil Nadu</li></ul></div>
+  </div>
+  <div class="footer-bottom">&copy; <span id="year"></span> Jothi Travels &amp; Tours. All rights reserved.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/919443486717?text=Hello%2C%20I%20would%20like%20to%20book%20a%20cab." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+<div class="sticky-bar">
+  <a class="call" href="tel:+919443486717">&#9742;<span>Call Now</span></a>
+  <a class="wa" href="https://wa.me/919443486717?text=Hello%2C%20I%20would%20like%20to%20book%20a%20cab." target="_blank" rel="noopener">&#128172;<span>WhatsApp</span></a>
+  <a class="book" href="booking.html">&#128197;<span>Book Now</span></a>
+</div>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
